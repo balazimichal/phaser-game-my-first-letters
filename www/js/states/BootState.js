@@ -47,10 +47,10 @@ var BootState = {
     create: function() {
         this.game.stage.backgroundColor = '#000';
         this.state.start('PreloadState');
-    }
+    },
     
     
-      setupAdmob: function() {
+    setupAdmob: function() {
     
     //1. enter ad settings
     var admobSettings = {};

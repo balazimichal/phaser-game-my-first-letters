@@ -91,7 +91,7 @@ var GameState = {
         
         
  
-        if(MrHop.admobLoaded) {
+        if(game.admobLoaded) {
         AdMob.showBanner(AdMob.AD_POSITION.BOTTOM_CENTERED);
         }
         
