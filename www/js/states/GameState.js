@@ -90,15 +90,55 @@ var GameState = {
         
         
         
+        this.game.device.whenReady(function(){
+            
+        // are we on hybrid app?
+            if(this.game.device.cordova || this.game.device.crosswalk) {
+                // is Admob available
+                if(typeof AdMob !== 'undefined' && AdMob) {
+                    // init AdMob
+                    this.setupAdmob();
+                }
+            }
+            
+            
+        }, this);
         
         
-
 
 
 
       
         
 
+        
+    },
+    
+    
+    
+    
+    
+    setupAdmob: function() {
+        
+        var admobSettings = {};
+        
+        if(this.game.device.android) {
+            admobSettings = {
+                banner: 'ca-app-pub-4800627181287602/6303168953',
+            }
+        } else if(this.game.device.iOS) {
+            admobSettings = {
+                banner: 'ca-app-pub-4800627181287602/6303168953',
+            }
+        }
+        
+        
+        AdMob.createBanner({
+            adId: admobSettings.banner,
+            autoShow: false,
+            isTesting: true,
+            overlap: true
+        });
         
     },
     

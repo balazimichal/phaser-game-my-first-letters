@@ -1,140 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets"
-    xmlns:gap = "http://phonegap.com/ns/1.0"
-    id = "eu.happyrobot.smalltalk"
-    versionCode = "1"
-    version = "1.2.0" >
-    
-    <name>Moje Pierwsze Literki</name>
-    <description>
-        Wspaniały sposób aby przez zabawę nauczyć się alfabetu!
-        25 literek alfabetu połączonych dźwiękami i pobudzającymi wyobraźnię obrazkami. Odpowiednie dla małych dzieci / prosta nawigacja. Za darmo - bez reklam.
-        
-        Oceniając prosimy brać pod uwagę preferencje dziecka a nie Waszą opinię, gdyż aplikacja została stworzona z myśla o najmłodszych użytkownikoch (do 3 lat).
-    </description>
-    <author href="http://www.happyrobot.eu" email="hello@happyrobot.eu" >
-        happyrobot.eu
-    </author>
-    
-    <platform name="ios"/>
-    <platform name="android"/>
-    <platform name="winphone"/>
-    
-    <preference name="orientation" value="landscape" />
-    <preference name="fullscreen" value="true" />
-    <preference name="vebviewbounce" value="false" />
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="disallowOverscroll" value="true" />
-    <preference name="target-device" value="universal" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="prerendered-icon" value="false" />
-    
-    <preference name="android-minSdkVersion" value="21" />
-    <preference name="android-installLocation" value="auto" />
-    
-    <platform name="ios">
-        <!-- iPhone 6 / 6+ -->
-        <icon src="package-assets/icon-60@3x.png" platform="ios" width="180" height="180" />
-        
-        <!-- iPhone / iPod Touch  -->
-        <icon src="package-assets/icon-60.png" platform="ios" width="60" height="60" />
-        <icon src="package-assets/icon-60@2x.png" platform="ios" width="120" height="120" />
-        
-        <!-- iPad -->
-        <icon src="package-assets/icon-76.png" platform="ios" width="76" height="76" />
-        <icon src="package-assets/icon-76@2x.png" platform="ios" width="152" height="152" />
-        <icon src="package-assets/icon-83.5@2x.png" platform="ios" width="167" height="167" />
-        
-        <!-- Settings Icon -->
-        <icon src="package-assets/icon-small.png" platform="ios" width="29" height="29" />
-        <icon src="package-assets/icon-small@2x.png" platform="ios" width="58" height="58" />
-        <icon src="package-assets/icon-small@3x.png" platform="ios" width="87" height="87" />
-        
-        <!-- Spotlight Icon -->
-        <icon src="package-assets/icon-40.png" platform="ios" width="40" height="40" />
-        <icon src="package-assets/icon-40@2x.png" platform="ios" width="80" height="80" />
-        <icon src="package-assets/icon-40@3x.png" platform="ios" width="120" height="120" />
-        
-        
-        
-        <!-- iPhone and iPod touch -->
-        <splash src="package-assets/Default.png" platform="ios" width="320" height="480" />
-        <splash src="package-assets/Default@2x.png" platform="ios" width="640" height="960" />
-        
-        <!-- iPhone 5 / iPod Touch (5th Generation) -->
-        <splash src="package-assets/Default-568h@2x.png" platform="ios" width="640" height="1136" />
-        
-        <!-- iPhone 6 -->
-        <splash src="package-assets/Default-667h@2x.png" platform="ios" width="750" height="1334" />
-        <splash src="package-assets/Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
-        <splash src="package-assets/Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
-        
-        <!-- iPad -->
-        <splash src="package-assets/Default-Portrait.png" platform="ios" width="768" height="1024" />
-        <splash src="package-assets/Default-Landscape.png" platform="ios" width="1024" height="768" />
-        
-        <!-- Retina iPad -->
-        <splash src="package-assets/Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
-        <splash src="package-assets/Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />
-    </platform>
-    
-    
-    <platform name="android">
-        <icon src="package-assets/ldpi.png" platform="android" qualifier="ldpi" />
-        <icon src="package-assets/mdpi.png" platform="android" qualifier="mdpi" />
-        <icon src="package-assets/hdpi.png" platform="android" qualifier="hdpi" />
-        <icon src="package-assets/xhdpi.png" platform="android" qualifier="xhdpi" />
-        <icon src="package-assets/xxhdpi.png" platform="android" qualifier="xxhdpi" />
-        <icon src="package-assets/fr-xxhdpi.png" platform="android" qualifier="fr-xxhdpi" />
-        
-        <splash src="package-assets/ldpi.png" platform="android" qualifier="ldpi" />
-        <splash src="package-assets/mdpi.png" platform="android" qualifier="mdpi" />
-        <splash src="package-assets/hdpi.png" platform="android" qualifier="hdpi" />
-        <splash src="package-assets/xhdpi.png" platform="android" qualifier="xhdpi" />
-        <splash src="package-assets/fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />
-        <splash src="package-assets/portrait-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
-        <splash src="package-assets/landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />
-    </platform>
-    
-    
-    <platform name="winphone">
-        <icon platform="winphone" width="44"  height="44"  src="package-assets/Square44x44Logo.scale-100.png" />
-        <icon platform="winphone" width="106" height="106" src="package-assets/Square44x44Logo.scale-240.png" />
-        <icon platform="winphone" width="150" height="150" src="package-assets/Square150x150Logo.scale-100.png" />
-        <icon platform="winphone" width="360" height="360" src="package-assets/Square150x150Logo.scale-240.png" />
-        <icon platform="winphone" width="71"  height="71"  src="package-assets/Square71x71Logo.scale-100.png" />
-        <icon platform="winphone" width="170" height="170" src="package-assets/Square71x71Logo.scale-240.png" />
-        <icon platform="winphone" width="310" height="150" src="package-assets/Wide310x150Logo.scale-100.png" />
-        <icon platform="winphone" width="744" height="360" src="package-assets/Wide310x150Logo.scale-240.png" />
-        <icon platform="winphone" width="70"  height="70"  src="package-assets/Square70x70Logo.scale-100.png" />
-        <icon platform="winphone" width="30"  height="30"  src="package-assets/Square30x30Logo.scale-100.png" />
-        <icon platform="winphone" width="310" height="310" src="package-assets/Square310x310Logo.scale-100.png" />
-        <icon platform="winphone" width="50"  height="50"  src="package-assets/StoreLogo.scale-100.png" />
-        <icon platform="winphone" width="120" height="120" src="package-assets/StoreLogo.scale-240.png" />
-        
-        
-        <splash platform="winphone" width="1152" height="1920" src="package-assets/SplashScreenPhone.scale-240.png" />
-        <splash platform="winphone" width="620"  height="300"  src="package-assets/SplashScreen.scale-100.png" />
-        
-    </platform>
-    
-    
-    <preference name="permissions" value="none" />
-    <access origin="*" subdomains="false" />
-    <preference name="android-build-tool" value="gradle" />
-    <gap:plugin name="cordova-plugin-admob" source="npm" />
-    
-</widget>
-
-
-
-
-
-<!--<?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0"  xmlns:android="http://schemas.android.com/apk/res/android" android-versionCode="1" version="0.0.1" id = "eu.happyrobot.smalltalk"  >
 
 <name>Moje Pierwsze Literki</name>
-<description>Education app for small kids teaching 25 letters of alphabet</description>
+ <description>Wspaniały sposób aby przez zabawę nauczyć się alfabetu!
+ 25 literek alfabetu połączonych dźwiękami i pobudzającymi wyobraźnię obrazkami. Odpowiednie dla małych dzieci / prosta nawigacja.</description>
 <author email="hello@happyrobot.eu" href="http://www.happyrobot.eu/">Happy Robot</author>
 <content src="index.html"/>
 <access origin="*"/>
@@ -162,4 +31,74 @@
 <config-file platform="android" parent="/manifest/application" mode="merge"> 
     <activity android:launchMode="singleTop" />
 </config-file>
-</widget>-->
+
+
+<platform name="ios">
+    <!-- iPhone 6 / 6+ -->
+    <icon src="package-assets/icon-60@3x.png" platform="ios" width="180" height="180" />
+    
+    <!-- iPhone / iPod Touch  -->
+    <icon src="package-assets/icon-60.png" platform="ios" width="60" height="60" />
+    <icon src="package-assets/icon-60@2x.png" platform="ios" width="120" height="120" />
+    
+    <!-- iPad -->
+    <icon src="package-assets/icon-76.png" platform="ios" width="76" height="76" />
+    <icon src="package-assets/icon-76@2x.png" platform="ios" width="152" height="152" />
+    <icon src="package-assets/icon-83.5@2x.png" platform="ios" width="167" height="167" />
+    
+    <!-- Settings Icon -->
+    <icon src="package-assets/icon-small.png" platform="ios" width="29" height="29" />
+    <icon src="package-assets/icon-small@2x.png" platform="ios" width="58" height="58" />
+    <icon src="package-assets/icon-small@3x.png" platform="ios" width="87" height="87" />
+    
+    <!-- Spotlight Icon -->
+    <icon src="package-assets/icon-40.png" platform="ios" width="40" height="40" />
+    <icon src="package-assets/icon-40@2x.png" platform="ios" width="80" height="80" />
+    <icon src="package-assets/icon-40@3x.png" platform="ios" width="120" height="120" />
+    
+    
+    
+    <!-- iPhone and iPod touch -->
+    <splash src="package-assets/Default.png" platform="ios" width="320" height="480" />
+    <splash src="package-assets/Default@2x.png" platform="ios" width="640" height="960" />
+    
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
+    <splash src="package-assets/Default-568h@2x.png" platform="ios" width="640" height="1136" />
+    
+    <!-- iPhone 6 -->
+    <splash src="package-assets/Default-667h@2x.png" platform="ios" width="750" height="1334" />
+    <splash src="package-assets/Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
+    <splash src="package-assets/Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
+    
+    <!-- iPad -->
+    <splash src="package-assets/Default-Portrait.png" platform="ios" width="768" height="1024" />
+    <splash src="package-assets/Default-Landscape.png" platform="ios" width="1024" height="768" />
+    
+    <!-- Retina iPad -->
+    <splash src="package-assets/Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
+    <splash src="package-assets/Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />
+</platform>
+
+
+<platform name="winphone">
+    <icon platform="winphone" width="44"  height="44"  src="package-assets/Square44x44Logo.scale-100.png" />
+    <icon platform="winphone" width="106" height="106" src="package-assets/Square44x44Logo.scale-240.png" />
+    <icon platform="winphone" width="150" height="150" src="package-assets/Square150x150Logo.scale-100.png" />
+    <icon platform="winphone" width="360" height="360" src="package-assets/Square150x150Logo.scale-240.png" />
+    <icon platform="winphone" width="71"  height="71"  src="package-assets/Square71x71Logo.scale-100.png" />
+    <icon platform="winphone" width="170" height="170" src="package-assets/Square71x71Logo.scale-240.png" />
+    <icon platform="winphone" width="310" height="150" src="package-assets/Wide310x150Logo.scale-100.png" />
+    <icon platform="winphone" width="744" height="360" src="package-assets/Wide310x150Logo.scale-240.png" />
+    <icon platform="winphone" width="70"  height="70"  src="package-assets/Square70x70Logo.scale-100.png" />
+    <icon platform="winphone" width="30"  height="30"  src="package-assets/Square30x30Logo.scale-100.png" />
+    <icon platform="winphone" width="310" height="310" src="package-assets/Square310x310Logo.scale-100.png" />
+    <icon platform="winphone" width="50"  height="50"  src="package-assets/StoreLogo.scale-100.png" />
+    <icon platform="winphone" width="120" height="120" src="package-assets/StoreLogo.scale-240.png" />
+    
+    
+    <splash platform="winphone" width="1152" height="1920" src="package-assets/SplashScreenPhone.scale-240.png" />
+    <splash platform="winphone" width="620"  height="300"  src="package-assets/SplashScreen.scale-100.png" />
+    
+</platform>
+
+</widget>
