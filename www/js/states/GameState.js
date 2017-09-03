@@ -87,6 +87,12 @@ var GameState = {
         this.leftArrow.customParams = {direction: -1};
         this.leftArrow.inputEnabled = true;
         this.leftArrow.events.onInputDown.add(this.switchBackground, this);
+        
+        
+        
+        
+        
+
 
 
 
