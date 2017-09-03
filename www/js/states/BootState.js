@@ -57,14 +57,14 @@ var BootState = {
     
     if(this.game.device.android) {
       admobSettings = {
-        banner: '4800627181287602/6303168953',
-        interstitial: '4800627181287602/6303168953'
+        banner: 'ca-app-pub-4800627181287602/6303168953',
+        //interstitial: 'ca-app-pub-4800627181287602/6303168953'
       };
     }
     else if(this.game.device.iOS) {
       admobSettings = {
-        banner: '4800627181287602/6303168953',
-        interstitial: '4800627181287602/6303168953'
+        banner: 'ca-app-pub-4800627181287602/6303168953',
+        //interstitial: 'ca-app-pub-4800627181287602/6303168953'
       };
     }
     
