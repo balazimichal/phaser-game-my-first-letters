@@ -12,14 +12,7 @@ var BootState = {
                      
         console.log('Are we in Cordova? : ' + this.game.device.cordova); 
         
-              //are we on a hybrid app?
-      if(this.game.device.cordova || this.game.device.crosswalk) {
-        //is AdMob available
-        if(typeof AdMob !== 'undefined' && AdMob) {
-          //init AdMob
-          this.setupAdmob();
-        }
-      }
+
         
         
         
@@ -29,9 +22,7 @@ var BootState = {
         
         
         
- 
-        
-        
+
 
         
     },   
@@ -50,39 +41,6 @@ var BootState = {
     },
     
     
-    setupAdmob: function() {
-    
-    //1. enter ad settings
-    var admobSettings = {};
-    
-    if(this.game.device.android) {
-      admobSettings = {
-        banner: 'ca-app-pub-4800627181287602/6303168953',
-        //interstitial: 'ca-app-pub-4800627181287602/6303168953'
-      };
-    }
-    else if(this.game.device.iOS) {
-      admobSettings = {
-        banner: 'ca-app-pub-4800627181287602/6303168953',
-        //interstitial: 'ca-app-pub-4800627181287602/6303168953'
-      };
-    }
-    
-    //2. prepare banner ad
-    AdMob.createBanner({
-      adId: admobSettings.banner,
-      autoShow: false, //true the ad will start right away
-      isTesting: true,
-      overlap: false //over the webview
-    });
-    
-    AdMob.prepareInterstitial({
-      adId: admobSettings.interstitial,
-      autoShow: false,
-      isTesting: true
-    });
-    
-    game.admobLoaded = true;
-  }
+
 
 };

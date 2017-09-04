@@ -90,11 +90,7 @@ var GameState = {
         
         
         
- 
-        if(game.admobLoaded) {
-        AdMob.showBanner(AdMob.AD_POSITION.BOTTOM_CENTERED);
-        }
-        
+
 
         
     },
@@ -210,3 +206,4 @@ var GameState = {
     
     
 };
+

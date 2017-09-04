@@ -6,6 +6,7 @@
     <title>Moje Pierwsze Literki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <script type="text/javascript" src="js/phaser.js"></script>
+    
 
     <style>
         body{
@@ -20,7 +21,28 @@
 </head>
 
 <body>
+    
     <script src="cordova.js"></script>
+    <script>
+    
+                 function onDeviceReady() {
+                document.removeEventListener('deviceready', onDeviceReady, false);
+
+                // Set AdMobAds options:
+                admob.setOptions({
+                    publisherId:          "ca-app-pub-4800627181287602/6303168953",  // Required
+                    //interstitialAdId:     "ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII",  // Optional
+                    //tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
+                    //tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
+                    //tappxShare:           0.5                                        // Optional
+                });
+            }
+
+            document.addEventListener("deviceready", onDeviceReady, false);
+        
+        admob.createBannerView();
+    
+    </script>
     <script src="js/states/BootState.js"></script>
     <script src="js/states/GameState.js"></script>
     <script src="js/states/HomeState.js"></script>
