@@ -1,4 +1,7 @@
-# phaser-game-my-first-letters
+# HTML5 game based on Phaser game framework
+
+Game based on the Phaser game framework:
+https://phaser.io/
 
 This is a simple card game for basic set of 24 letters of Polish alphabet.
 
